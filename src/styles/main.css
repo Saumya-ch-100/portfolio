@@ -960,27 +960,7 @@ body.cursor-hover .cursor-follower { width: 60px; height: 60px; border-color: rg
   color: var(--grey-200);
 }
 
-.skill-bars { display: flex; flex-direction: column; gap: 1rem; }
-.skill-bar-item span {
-  display: block;
-  font-size: 0.82rem;
-  font-weight: 500;
-  color: var(--text-secondary);
-  margin-bottom: 0.4rem;
-}
-.skill-track {
-  height: 4px;
-  background: rgba(255,255,255,0.05);
-  border-radius: 2px;
-  overflow: hidden;
-}
-.skill-fill {
-  height: 100%;
-  width: 0;
-  background: linear-gradient(90deg, var(--grey-600), var(--grey-300));
-  border-radius: 2px;
-  transition: width 1.5s var(--ease-out-expo);
-}
+
 
 .skills-tags {
   display: flex;

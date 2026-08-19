@@ -62,19 +62,7 @@ export function initAnimations() {
     },
   });
 
-  // ── Skill bars ────────────────────────────────────────────────
-  document.querySelectorAll('.skill-bar-item').forEach(item => {
-    const fill = item.querySelector('.skill-fill');
-    const level = item.dataset.level || 70;
-    ScrollTrigger.create({
-      trigger: item,
-      start: 'top 90%',
-      once: true,
-      onEnter: () => {
-        gsap.to(fill, { width: level + '%', duration: 1.4, ease: 'power2.out' });
-      },
-    });
-  });
+
 
   // ── Education progress bar ────────────────────────────────────
   const eduFill = document.querySelector('.edu-progress-fill');
